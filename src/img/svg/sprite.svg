@@ -1,0 +1,15 @@
+<symbol id="kratka" width="16" height="7" viewBox="0 0 16 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2C4 3.66667 9.2 6 14 2" stroke="#FF3B3D" stroke-width="4"/>
+</symbol>
+
+<symbol id="kratka-big" width="59" height="22" viewBox="0 0 59 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 6C13.1667 12.7916 34.4 22.2999 54 6" stroke="#FF3B3D" stroke-width="14"/>
+</symbol>
+
+<symbol id="kratka-w" width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 3C6.33333 6.77312 17.6 12.0555 28 3" stroke="white" stroke-width="6"/>
+</symbol>
+
+<symbol id="arrow" width="15" height="33" viewBox="0 0 15 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.79289 32.7071C7.18342 33.0976 7.81658 33.0976 8.20711 32.7071L14.5711 26.3431C14.9616 25.9526 14.9616 25.3195 14.5711 24.9289C14.1805 24.5384 13.5474 24.5384 13.1569 24.9289L7.5 30.5858L1.84315 24.9289C1.45262 24.5384 0.819457 24.5384 0.428932 24.9289C0.0384078 25.3195 0.0384078 25.9526 0.428932 26.3431L6.79289 32.7071ZM6.5 0V32H8.5V0H6.5Z" fill="white"/>
+</symbol>

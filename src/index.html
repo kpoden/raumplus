@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
     <title>RAUMLUS</title>
 </head>
 
@@ -72,7 +73,7 @@
 
             
         </header>
-        <div class="calc">
+        <section class="calc">
             <div class="calc__form">
                 <h4 class="calc__title block-title">Расчитаем  
                     стоимость
@@ -139,7 +140,76 @@
                         Мы не рассылаем спам, только персональные предложения</p>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="projects">
+            <div class="projects__header">
+                <div class="projects__title block-title">
+                    Посмотрите  
+                    на наши
+                    проекты<svg width="59" height="22" >
+                        <use xlink:href="img/sprite.svg#kratka-big"></use>
+                    </svg></div>
+                <div class="projects__arrows">
+                    <div class="projects__arrow prev-arr">
+                        <svg width="15" height="33" >
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="projects__arrow next-arr">
+                        <svg width="15" height="33" >
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__slider slider">
+                <div class="projects__item slider__item">
+                    <img src="img/projects/proj1.png" alt="" class="slider__image">
+                    <div class="slider__text">
+                        <h4 class="slider__title">Кабинеты <br> и библиотеки</h4>
+                        <p class="slider__subtext">Для жилых и общественных помещений</p>
+                    </div>
+                </div>
+                <div class="projects__item slider__item">
+                    <img src="img/projects/proj2.png" alt="" class="slider__image">
+                    <div class="slider__text">
+                        <h4 class="slider__title">Мебель <br> для кухни</h4>
+                        <p class="slider__subtext">Современные комплектующие</p>
+                    </div>
+                </div>
+                <div class="projects__item slider__item">
+                    <img src="img/projects/proj3.png" alt="" class="slider__image">
+                    <div class="slider__text">
+                        <h4 class="slider__title">Детские и подростковые <br> комнаты</h4>
+                        <p class="slider__subtext">Из экологически чистых материалов</p>
+                    </div>
+                </div>
+                <div class="projects__item slider__item">
+                    <img src="img/projects/proj1.png" alt="" class="slider__image">
+                    <div class="slider__text">
+                        <h4 class="slider__title">Кабинеты <br> и библиотеки</h4>
+                        <p class="slider__subtext">Для жилых и общественных помещений</p>
+                    </div>
+                </div>
+                <div class="projects__item slider__item">
+                    <img src="img/projects/proj2.png" alt="" class="slider__image">
+                    <div class="slider__text">
+                        <h4 class="slider__title">Мебель <br> для кухни</h4>
+                        <p class="slider__subtext">Современные комплектующие</p>
+                    </div>
+                </div>
+                <div class="projects__item slider__item">
+                    <img src="img/projects/proj3.png" alt="" class="slider__image">
+                    <div class="slider__text">
+                        <h4 class="slider__title">Детские и подростковые <br> комнаты</h4>
+                        <p class="slider__subtext">Из экологически чистых материалов</p>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+
+
         <br>
         <br>
         <br>
@@ -161,6 +231,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="scripts/main.js"></script>
 </body>
 
