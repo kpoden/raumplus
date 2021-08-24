@@ -25,6 +25,8 @@
         padding-right: 25px
         span
             padding-left: 8px
+        +mw600
+            display: none
 
     &__squares
         display: flex
@@ -64,15 +66,27 @@
     &__main
         display: flex
         justify-content: space-between
-        height: 550px
+        padding: 50px 0 80px
+        +mw480
+            flex-direction: column
+            align-items: center
+            padding: 20px 0 50px
 
     &__left
+        +mw480
+            display: flex
+            justify-content: center
         img
             padding-top: 22px
             width: 100%
             height: auto
+            +mw979
+                padding-top: 50px
+            +mw480
+                width: 70%
+                padding: 10px
+   
             
-
 
     &__bg
         position: absolute
@@ -81,6 +95,13 @@
         height: 530px
         background: $stark
         z-index: -1
+        +mw979
+            height: 400px
+
+        +mw480
+            width: 60%
+            height: 170px
+
 
 
     &__right
@@ -91,13 +112,34 @@
         width: 50%
         font-weight: 600
         padding-left: 15%
+        +mw979
+            padding-left: 5%
+        +mw480
+            width: 90%
+            align-items: center
+            padding: 30px 0 0 0
+
+        
     
     &__title
-        font-size: 48px
         &:first-child
             padding-bottom: 30px
+        +mw480
+            display: flex
+            justify-content: space-between
+    &__uptext
+        +mw480
+            padding-right: 20px
+
+        
 
     &__button
+        width: 270px
+        +mw979
+            width: auto
+        +mw480
+            margin: 10px 0 0 10px
+            width: 80%
         
         
         

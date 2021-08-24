@@ -1,21 +1,26 @@
 //** Header section **//
 
 .block-title
+    font-size: 48px
     max-width: 330px
     padding-bottom: 25px
-    +adaptive-font(48, 35)
+    font-weight: 600
+    +mw979
+        +adaptive-font(40, 25)
 
 
 .button
     width: calc(100% - 6px)
-    height: 76px
+    min-height: 73px
     background: $jewel
     position: relative
     cursor: pointer
+    min-width: 180px
+    transition: .2s
     +mw768
         width: 70%
         min-width: 120px
-        height: 50px
+        min-height: 40px
 
     
     &__text
@@ -40,7 +45,8 @@
         top: -6px
         left: 6px
         +mw768
-            height: 50px
+            height: 40px
+
 
 .red-text
     color: $fuschia

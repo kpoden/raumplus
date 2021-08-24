@@ -1,0 +1,143 @@
+.quality
+    &__top
+        display: flex
+        justify-content: space-between
+        height: 370px
+        margin-bottom: 30px
+        +mw768
+            flex-direction: column
+            height: auto
+            align-items: center
+            div
+                width: 90%
+        
+
+    &__bottom
+        display: flex
+        justify-content: space-between
+        height: 370px
+        +mw768
+            flex-direction: column
+            height: auto
+            align-items: center
+            div
+                width: 90%
+    
+
+    &__title
+        width: 28%
+        padding-top: 80px
+        align-self: start
+
+    &__how
+        width: 23%
+        border: 1px solid $light-grey
+        padding: 30px
+        height: 100%
+        position: relative
+        +mw768
+            margin-bottom: 30px
+        
+        img
+            position: absolute
+            right: 0
+            bottom: 0
+            +mw480
+                height: 58%
+
+    &__promos
+        width: 40%
+        padding: 30px
+        background: $fuschia
+        position: relative
+        filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+        .quality__uptext
+            color: #ffffff
+        img
+            position: absolute
+            right: 0
+            bottom: 0
+            +mw480
+                height: 70%
+
+    &__reviews
+        border: 1px solid $light-grey
+        width: 23%
+        padding: 30px
+        position: relative
+        +mw768
+            margin-bottom: 30px
+
+        
+        img
+            position: absolute
+            right: -25px
+            bottom: 0
+            padding-bottom: 20px
+            +mw768
+                height: 80%
+                right: 2%
+            +mw480
+                height: 60%
+                right: -15%
+
+
+    &__articles
+        border: 1px solid $light-grey
+        width: 40%
+        padding: 30px
+        position: relative
+
+        
+        img
+            position: absolute
+            right: 0
+            bottom: 0
+            +mw768
+                height: 80%
+                right: 5%
+            +mw480
+                height: 60%
+                right: 0
+
+
+
+    &__mission
+        width: 28%
+        padding: 30px 0 0 0
+        .quality__uptext
+            font-size: 18px
+            width: 100%
+        .quality__subtext
+            max-width: 100%
+            color: $light-grey
+            width: 100%
+
+        +mw768
+            width: 100%
+    
+    &__text
+
+
+    &__uptext
+        color: $void
+        font-size: 24px
+        padding-bottom: 15px
+
+    &__subtext
+        color: $jewel
+        font-size: 12px
+        max-width: 300px
+        +mw768
+            max-width: 150px
+        +mw480
+            max-width: 120px
+
+    &__button
+        margin-top: 40px
+        max-width: 260px
+        +mw768 
+            margin: 40px auto 0
+
+
+

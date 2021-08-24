@@ -1,4 +1,5 @@
 .projects
+    padding-bottom: 30px
 
     &__header
         position: relative
@@ -6,7 +7,6 @@
     &__title
         +mw600
             padding-bottom: 100px
-
 
     &__arrows
         display: flex
@@ -68,10 +68,14 @@
         color: $void
         width: 90%
         padding-bottom: 10px
+        +mw979
+            +adaptive-font(24, 18)
 
 
     &__subtext
         color: $light-grey
+        +mw979
+            +adaptive-font(18, 12)
 
 
 

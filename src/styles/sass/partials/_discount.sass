@@ -1,17 +1,22 @@
-.calc
+.discount
     display: flex
     justify-content: space-between
-
-    +mw600
+    +mw1030
         flex-direction: column
-        padding-top: 25px
+        align-items: center
+
+    &__left
+        position: relative
+        +mw1030
+            width: 70%
 
     &__title
+        font-size: 48px
+        font-weight: 600
+        padding-bottom: 100px
+        +mw1030
+            padding-bottom: 30px
 
-    &__form
-        width: 48%
-        +mw600
-            width: 100%
     &__button
         width: calc(100% - 6px)
         .button__text
@@ -20,8 +25,59 @@
             +mw480
                 font-size: 12px
 
-    .form
+    &__get
+        font-size: 48px
+        font-weight: 600
+        display: flex
+        +mw600
+            flex-direction: column
+        
 
+
+    &__number
+        position: absolute
+        right: -230px
+        bottom: 0px
+        +mw1030
+            right: -50px
+            img
+                height: 300px
+        +mw600
+            position: static
+            img
+                height: 250px
+
+    
+
+    &__form
+        width: 60%
+        padding: 50px 0 0 100px
+        position: relative
+        +mw1030
+            width: 100%
+            padding: 50px 0 0 30px
+
+        
+
+    
+    .form
+        &__wrap
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+        &__bg
+            position: absolute
+            left: 0px
+            top: 0px
+            width: 500%
+            height: 100%
+            background: $stark
+            z-index: -1
+        &__title
+            font-size: 18px
+            color: $void
+            max-width: 330px
+            padding-bottom: 35px
         &__group
             width: 100%
             display: flex
@@ -30,7 +86,7 @@
                 margin-top: 20px
         
         &__field-name
-                color: $grey
+                color: $void
                 font-size: 14px
                 padding-bottom: 20px
 
@@ -44,9 +100,8 @@
                 width: 100%
                 height: 67px
                 border: 1px solid $grey
-                font-size: 14px
-                padding: 0.5em 0.5em 0
-
+                font-size: 30px
+                padding: 0.5em
                 +mw979
                     height: 50px
 
@@ -54,10 +109,9 @@
             width: 47%
             height: 67px
             background: $fuschia
-            margin-top: 36px
+            margin-top: 39px
             display: flex
             position: relative
-            cursor: pointer
             +mw(903)
                 margin-top: 56px
             +mw979
@@ -66,7 +120,6 @@
                 margin-top: 38px
             +mw(445)
                 margin-top: 56px
-
         &__arrow
             display: block
             background: $void
@@ -83,13 +136,7 @@
             color: #ffffff
             text-align: center
             margin: auto
-            +mw979
-                font-size: 12px
-            +mw600
-                font-size: 14px
-            +mw480
-                font-size: 12px
-
+            font-size: 14px
     .agree
         display: flex
         &__check
@@ -101,54 +148,3 @@
             color: $grey
             +mw480
                 font-size: 9px
-
-
-    .paper
-        background: $fuschia
-        width: 45%
-        height: 570px
-        position: relative
-        color: #ffffff
-        margin-top: 60px
-        +mw979
-            height: 500px
-        +mw600
-            width: 100%
-            height: 350px
-            margin: 20px 0
-
-        &__wrap
-            margin: 0 0 55px 55px 
-            position: absolute
-            bottom: 0
-            left: 0
-        &__img
-            position: absolute
-            width: 130%
-            top: -70px
-            left: -80px
-            +mw(670)
-                top: -20px
-            +mw600
-                width: 90%
-                left: 100px
-
-        &__title
-            font-size: 18px
-            padding-bottom: 26px
- 
-
-        &__subtext
-            font-size: 12px
-            max-width: 230px
-            &:first-child
-                padding-bottom: 15px
-
-
-
-
-
-
-    
-
-

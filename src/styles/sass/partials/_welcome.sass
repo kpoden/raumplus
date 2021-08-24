@@ -1,0 +1,73 @@
+.welcome
+    margin: 110px 0
+    display: flex
+    justify-content: space-between
+    height: 550px
+    +mw600
+        flex-direction: column
+        height: auto
+        align-items: center
+
+
+    &__left
+        +mw600
+            padding-left: 50px
+        img
+            margin-top: -40px
+            height: auto
+            +mw1180
+                width: 100%
+            +mw768
+                margin-top: 40px
+            +mw600
+                width: 90%
+            +mw480
+                width: 100%
+            
+
+
+    &__bg
+        position: absolute
+        left: 0px
+        width: 48%
+        height: 550px
+        background: $stark
+        z-index: -1
+        +mw768
+            height: 550px
+        +mw600
+            height: 300px
+            width: 70%
+
+
+    &__right
+        display: flex
+        align-items: start
+        justify-content: center
+        flex-direction: column
+        width: 50%
+        font-weight: 600
+        +mw600
+            width: 80%
+            padding-top: 20px
+            align-items: center
+    
+    &__title
+        +mw600
+            padding-top: 50px
+            display: flex
+            .welcome__uptext
+                padding-right: 20px
+        &:first-child
+            padding-bottom: 30px
+
+    &__button
+        width: 263px
+        position: relative
+        .button__text
+            
+            svg 
+                line-height: 50px
+                position: absolute
+                left: -35px
+                top: -2px

@@ -1,0 +1,149 @@
+.count
+    display: flex
+    justify-content: space-between
+    margin-bottom: 110px
+    +mw(850)
+        flex-direction: column
+        align-items: center
+
+    &__left
+        width: 50%
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        flex-wrap: wrap
+        +mw(850)
+            width: 100%
+
+    &__top
+        display: flex
+        justify-content: space-between
+        min-width: 570px
+        +mw(578)
+            flex-direction: column
+
+    &__bottom
+        display: flex
+        justify-content: space-between
+        +mw(578)
+            flex-direction: column
+            
+    &__quick
+        width: 98%
+        background: $fuschia
+        filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+
+        .count__text
+            color: #ffffff
+        +mw600
+            width: 60%
+        
+
+    &__fill
+        width: 98%
+        height: 220px
+        +mw600
+            height: auto
+            width: 60%
+
+    &__easy
+        margin-top: 30px
+        +mw600
+            width: 60%
+            margin-top: 0
+
+    &__right
+        display: flex
+        align-items: start
+        justify-content: center
+        flex-direction: column
+        width: 30%
+        font-weight: 600
+        +mw(850)
+            padding-top: 50px
+            flex-direction: row
+            width: 90%
+            justify-content: space-between
+
+
+    &__text
+        padding: 30px
+        
+
+    &__uptext
+        font-weight: 600
+        padding-bottom: 30px
+
+
+    &__subtext
+        font-size: 12px
+        
+
+    &__title
+        font-size: 48px
+        &:first-child
+            padding-bottom: 30px
+
+    &__subtitle
+        display: block
+        font-size: 18px
+        font-weight: 600
+        width: 250px
+        +mw(850)
+            padding: 0 0 30px 20px
+            font-size: 14px
+
+    &__button
+        margin: 20px 0 0 0
+        +mw600
+            margin: 0 0 0 20px
+.result
+    position: relative
+    width: 50%
+    padding: 30px
+    height: 220px
+    overflow: hidden
+    cursor: pointer
+    margin-top: 30px
+    +mw600
+        margin: 0 auto
+        width: 80%
+
+    &:hover .result__curtain
+        bottom: -25px
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+
+    &__title
+        padding-top: 30px
+        font-size: 24px
+        font-weight: 600
+        color: #ffffff
+
+    &__price
+        position: absolute
+        bottom: 20px
+        left: 130px
+        transform: translateX(-50%)
+        font-weight: 600
+        font-size: 24px
+        color: $fuschia
+        z-index: 10
+
+    &__curtain
+        position: absolute
+        bottom: -70px
+        left: 40px
+        transition: .3s
+        z-index: 0
+
+
+            
+        
+
+
+
+
