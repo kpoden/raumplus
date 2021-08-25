@@ -6,23 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
     <title>RAUMLUS</title>
 </head>
 
 <body>
+    <div class="bg-dark">
+        <div class="popup">
+            <div class="span popup__close">&times;</div>
+            <div class="popup__body">
+                <h2 class="popup__title">Закажите бесплатную консультацию
+                    <svg width="59" height="22">
+                        <use xlink:href="img/sprite.svg#kratka-big"></use>
+                    </svg>
+                </h2>
+                <form>
+                    <div class="form__group">
+                        <div class="form__field">
+                            <span class="form__field-name">Введите ваше имя</span>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form__field">
+                            <span class="form__field-name">Введите ваш email</span>
+                            <input type="text" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__field">
+                            <span class="form__field-name">Введите ваш номер телефона</span>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="form__attach">
+                            <span class="form__arrow">
+                                <svg width="15" height="33">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+                            </span>
+                            <span class="form__files">ПРИКРЕПИТЬ ФАЙЛЫ</span>
+
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__field">
+                            <div class="agree">
+                                <input type="checkbox" class="agree__check" name="agree" id="agree__popup">
+                                <label for="agree__popup" class="agree__text">Я согласен с условиями обработки и
+                                    исползования
+                                    персональных данных</label>
+                            </div>
+                        </div>
+                        <div class="form__field">
+                            <button  type="submit"  class="button popup__button">
+                                <span class="button__bg-border"></span>
+                                <span class="button__text">ПОЛУЧИТЬ&nbsp;РАСЧЕТ</span>
+                            </button>
+
+                        </div>
+                        <p class="err-alert">Пожалйста заполните все поля!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <header class="header">
             <div class="header__top">
                 <div class="header__logo">
                     <span>Дизайн.</span>
                     <span>Отделка.</span>
-                    <span>Мебель<svg width="16" height="7" >
+                    <span>Мебель<svg width="16" height="7">
                             <use xlink:href="img/sprite.svg#kratka"></use>
                         </svg>
                     </span>
-                    
+
                 </div>
                 <div class="header__group">
                     <div class="header__address">
@@ -44,15 +101,15 @@
             <div class="header__main">
                 <div class="header__left">
                     <div class="header__bg"></div>
-                    <img src="img/header/cupboard.png" alt="cupboard">
-                   
+                    <img src="img/header/cupboard.png" alt="cupboard" class="header__cupboard">
+
                 </div>
                 <div class="header__right">
                     <div class="header__title block-title">
                         <div class="header__uptext">
                             Жизнь <br>
                             полна <br>
-                            идей <svg width="59" height="22" >
+                            идей <svg width="59" height="22">
                                 <use xlink:href="img/sprite.svg#kratka-big"></use>
                             </svg>
                         </div>
@@ -64,7 +121,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="header__button button">
+                    <div class="header__button button popup__trigger">
                         <span class="button__bg-border"></span>
                         <span class="button__text">ЗАКАЗАТЬ&nbsp;КОНСУЛЬТАЦИЮ</span>
                     </div>
@@ -74,13 +131,13 @@
 
             </div>
 
-            
+
         </header>
         <section class="calc">
             <div class="calc__form">
-                <h4 class="calc__title block-title">Расчитаем  
+                <h4 class="calc__title block-title">Расчитаем
                     стоимость
-                    за 30 минут <svg width="59" height="22" >
+                    за 30 минут <svg width="59" height="22">
                         <use xlink:href="img/sprite.svg#kratka-big"></use>
                     </svg>
                 </h4>
@@ -102,28 +159,30 @@
                         </div>
                         <div class="form__attach">
                             <span class="form__arrow">
-                                <svg width="15" height="33" >
+                                <svg width="15" height="33">
                                     <use xlink:href="img/sprite.svg#arrow"></use>
                                 </svg>
                             </span>
                             <span class="form__files">ПРИКРЕПИТЬ ФАЙЛЫ</span>
-                            
+
                         </div>
                     </div>
                     <div class="form__group">
                         <div class="form__field">
                             <div class="agree">
                                 <input type="checkbox" class="agree__check" name="agree" id="agree">
-                                <label for="agree" class="agree__text">Я согласен с условиями обработки и исползования персональных данных</label>
+                                <label for="agree" class="agree__text">Я согласен с условиями обработки и исползования
+                                    персональных данных</label>
                             </div>
                         </div>
                         <div class="form__field">
-                            <div class="button calc__button">
+                            <button type="submit" class="button calc__button">
                                 <span class="button__bg-border"></span>
                                 <span class="button__text">ПОЛУЧИТЬ&nbsp;РАСЧЕТ</span>
-                            </div>
-        
+                            </button>
+
                         </div>
+                        <p class="err-alert">Пожалйста заполните все поля!</p>
                     </div>
                 </form>
             </div>
@@ -132,8 +191,8 @@
                 <div class="paper__wrap">
                     <p class="paper__title">
                         Вы <br>
-                        получите  <br>
-                        примерный  <br>
+                        получите <br>
+                        примерный <br>
                         расчет<svg width="30" height="11">
                             <use xlink:href="img/sprite.svg#kratka-w"></use>
                         </svg>
@@ -147,19 +206,19 @@
         <section class="projects">
             <div class="projects__header">
                 <div class="projects__title block-title">
-                    Посмотрите  
+                    Посмотрите
                     на наши
-                    проекты<svg width="59" height="22" >
+                    проекты<svg width="59" height="22">
                         <use xlink:href="img/sprite.svg#kratka-big"></use>
                     </svg></div>
                 <div class="projects__arrows">
                     <div class="projects__arrow prev-arr">
-                        <svg width="15" height="33" >
+                        <svg width="15" height="33">
                             <use xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
                     </div>
                     <div class="projects__arrow next-arr">
-                        <svg width="15" height="33" >
+                        <svg width="15" height="33">
                             <use xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
                     </div>
@@ -209,7 +268,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </section>
         <section class="choose">
 
@@ -252,10 +311,10 @@
 
                             <div class="choose__bottom-text choose__percent">
                                 <span>-%<svg width="59" height="22">
-                                    <use xlink:href="img/sprite.svg#kratka-big">
-                                    </use>
-                                </svg>
-                                    
+                                        <use xlink:href="img/sprite.svg#kratka-big">
+                                        </use>
+                                    </svg>
+
                                 </span>
                                 <p>
                                     не экономим
@@ -285,10 +344,10 @@
 
                             <div class="choose__bottom-text choose__years">
                                 <span>14<svg width="59" height="22">
-                                    <use xlink:href="img/sprite.svg#kratka-big">
-                                    </use>
-                                </svg>
-                                    
+                                        <use xlink:href="img/sprite.svg#kratka-big">
+                                        </use>
+                                    </svg>
+
                                 </span>
                                 <p>
                                     лет опыта
@@ -373,20 +432,20 @@
                 <div class="quality__mission">
                     <div class="quality__text">
                         <h2 class="quality__uptext">
-                            Мебель 
+                            Мебель
                             призвана
-                            украшать 
+                            украшать
                             интерьер
                         </h2>
                         <p class="quality__subtext">
                             Делать дом функциональным,
-                            а проживание в нем - комфортным. 
-                            
-                            Она должна радовать Вас долгие 
+                            а проживание в нем - комфортным.
+
+                            Она должна радовать Вас долгие
                             годы,а не несколько недель или месяцев. Поэтому выбирайте лучшее
                             для себя и для своего дома!
                         </p>
-                        <div class="quality__button button">
+                        <div class="quality__button button popup__trigger">
                             <span class="button__bg-border"></span>
                             <span class="button__text">ЗАКАЗАТЬ&nbsp;КОНСУЛЬТАЦИЮ</span>
                         </div>
@@ -410,7 +469,7 @@
                             <use xlink:href="img/sprite.svg#kratka-big"></use>
                         </svg>
                     </div>
-                    
+
                     <div class="welcome__subtext">
                         <span class="red-text">
                             лучше <br>
@@ -419,11 +478,11 @@
                         </span>
                     </div>
                 </div>
-                <div class="welcome__button button">
+                <div class="welcome__button button tour">
                     <span class="button__bg-border"></span>
                     <span class="button__text"> <svg width="24" height="24">
-                        <use xlink:href="img/sprite.svg#eye"></use>
-                    </svg>3D&nbsp;ТУР</span>
+                            <use xlink:href="img/sprite.svg#eye"></use>
+                        </svg>3D&nbsp;ТУР</span>
                 </div>
             </div>
         </section>
@@ -442,7 +501,7 @@
                     <div class="count__fill">
                         <div class="count__text">
                             <div class="count__uptext">Наполнение</div>
-                            <div class="count__subtext  red-text">Масса вариантов <br>
+                            <div class="count__subtext">Масса вариантов <br>
                                 для вашей фантазии, <br>
                                 в нашем конструкторе мебели</div>
                         </div>
@@ -452,7 +511,7 @@
                     <div class="count__easy">
                         <div class="count__text">
                             <div class="count__uptext">Просто</div>
-                            <div class="count__subtext  red-text">Вам нужно только ввести <br>
+                            <div class="count__subtext">Вам нужно только ввести <br>
                                 данные своего проекта, <br>
                                 конструктор сам все посчитает</div>
                         </div>
@@ -483,7 +542,7 @@
                         </svg>
 
                     </div>
-            
+
                 </div>
                 <div class="count__subtext">
                     <span class="count__subtitle">
@@ -502,7 +561,7 @@
 
         <section class="discount">
             <div class="discount__left">
-                <div class="discount__title">
+                <div class="discount__title block-title">
                     Закажи <br>
                     бесплатный <br>
                     расчет<svg width="59" height="22">
@@ -549,6 +608,7 @@
                             <span class="form__files">ПРИКРЕПИТЬ ФАЙЛЫ</span>
 
                         </div>
+                        <p class="err-alert">Пожалйста заполните все поля!</p>
                     </div>
                     <div class="form__group">
                         <div class="form__field">
@@ -560,91 +620,82 @@
                             </div>
                         </div>
                         <div class="form__field">
-                            <div class="button discount__button">
+                            <button  type="submit"  class="button discount__button">
                                 <span class="button__bg-border"></span>
                                 <span class="button__text">ПОЛУЧИТЬ&nbsp;РАСЧЕТ</span>
-                            </div>
+                            </button>
 
                         </div>
                     </div>
                 </form>
             </div>
         </section>
-    
-    
-    <footer class="footer">
-        <div class="footer__links">
-            <div class="footer__group">
-                <ul class="footer__list">
-                    <li class="footer__link"><a href="#">О компании</a></li>
-                    <li class="footer__link"><a href="#">О нас</a></li>
-                    <li class="footer__link"><a href="#">Raumplus</a></li>
-                    <li class="footer__link"><a href="#">Политика в области качества</a></li>
-                    <li class="footer__link"><a href="#">Отзывы</a></li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__link"><a href="#">Дизайн, ремонт, отделка</a></li>
-                    <li class="footer__link"><a href="#">Дизайн интерьера</a></li>
-                    <li class="footer__link"><a href="#">Трёхмерная визуализация</a></li>
-                    <li class="footer__link"><a href="#">Авторский надзор</a></li>
-                    <li class="footer__link"><a href="#">Ремонт под ключ</a></li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__link"><a href="#">Клиентам</a></li>
-                    <li class="footer__link"><a href="#">Акции и скидки</a></li>
-                    <li class="footer__link"><a href="#">Как заказать</a></li>
-                    <li class="footer__link"><a href="#">Способы оплаты</a></li>
-                    <li class="footer__link"><a href="#">Доставка и монтаж</a></li>
-                    <li class="footer__link"><a href="#">Видео</a></li>
-                    <li class="footer__link"><a href="#">Видео</a></li>
-                    <li class="footer__link"><a href="#">Политика обработки <br>   персональных данных</a></li>
-                </ul>
-            </div>
-            <div class="footer__group">
-                <ul class="footer__list">
-                    <li class="footer__link"><a href="#">Портфолио</a></li>
-                    <li class="footer__link"><a href="#">Шкафы-купе</a></li>
-                    <li class="footer__link"><a href="#">Гардеробные комнаты</a></li>
-                    <li class="footer__link"><a href="#">Межкомнатные двери и перегородки</a></li>
-                    <li class="footer__link"><a href="#">Кабинеты и библиотеки</a></li>
-                    <li class="footer__link"><a href="#">Мебель для кухни</a></li>
-                    <li class="footer__link"><a href="#">Детские и подростковые комнаты</a></li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer__link"><a href="#">Дизайнерам и архитекторам</a></li>
-                    <li class="footer__link"><a href="#">Контакты</a></li>
-                    <li class="footer__link"><a href="#">г. Челябинск, ул. Сони Кривой, д. 83</a></li>
-                    <li class="footer__link"><a href="#">+7 (351) 235-65-94</a></li>
-                    <li class="footer__link"><a href="#">alfakomfort@mail.ru</a></li>
-                    <li class="footer__link"><a href="#">Вконтакте</a></li>
-                </ul>
-                <div class="footer__logo">
-                    Дизайн.
-                    Отделка.
-                    Мебель<svg width="16" height="7">
-                        <use xlink:href="img/sprite.svg#kratka"></use>
-                    </svg>
+
+
+        <footer class="footer">
+            <div class="footer__links">
+                <div class="footer__group">
+                    <ul class="footer__list">
+                        <li class="footer__link"><a href="#">О компании</a></li>
+                        <li class="footer__link"><a href="#">О нас</a></li>
+                        <li class="footer__link"><a href="#">Raumplus</a></li>
+                        <li class="footer__link"><a href="#">Политика в области качества</a></li>
+                        <li class="footer__link"><a href="#">Отзывы</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__link"><a href="#">Дизайн, ремонт, отделка</a></li>
+                        <li class="footer__link"><a href="#">Дизайн интерьера</a></li>
+                        <li class="footer__link"><a href="#">Трёхмерная визуализация</a></li>
+                        <li class="footer__link"><a href="#">Авторский надзор</a></li>
+                        <li class="footer__link"><a href="#">Ремонт под ключ</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__link"><a href="#">Клиентам</a></li>
+                        <li class="footer__link"><a href="#">Акции и скидки</a></li>
+                        <li class="footer__link"><a href="#">Как заказать</a></li>
+                        <li class="footer__link"><a href="#">Способы оплаты</a></li>
+                        <li class="footer__link"><a href="#">Доставка и монтаж</a></li>
+                        <li class="footer__link"><a href="#">Видео</a></li>
+                        <li class="footer__link"><a href="#">Видео</a></li>
+                        <li class="footer__link"><a href="#">Политика обработки <br> персональных данных</a></li>
+                    </ul>
+                </div>
+                <div class="footer__group">
+                    <ul class="footer__list">
+                        <li class="footer__link"><a href="#">Портфолио</a></li>
+                        <li class="footer__link"><a href="#">Шкафы-купе</a></li>
+                        <li class="footer__link"><a href="#">Гардеробные комнаты</a></li>
+                        <li class="footer__link"><a href="#">Межкомнатные двери и перегородки</a></li>
+                        <li class="footer__link"><a href="#">Кабинеты и библиотеки</a></li>
+                        <li class="footer__link"><a href="#">Мебель для кухни</a></li>
+                        <li class="footer__link"><a href="#">Детские и подростковые комнаты</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__link"><a href="#">Дизайнерам и архитекторам</a></li>
+                        <li class="footer__link"><a href="#">Контакты</a></li>
+                        <li class="footer__link"><a href="#">г. Челябинск, ул. Сони Кривой, д. 83</a></li>
+                        <li class="footer__link"><a href="#">+7 (351) 235-65-94</a></li>
+                        <li class="footer__link"><a href="#">alfakomfort@mail.ru</a></li>
+                        <li class="footer__link"><a href="#">Вконтакте</a></li>
+                    </ul>
+                    <div class="footer__logo">
+                        Дизайн.
+                        Отделка.
+                        Мебель<svg width="16" height="7">
+                            <use xlink:href="img/sprite.svg#kratka"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__credits">
-            <p class="footer__copyright">© 2019 Бренд-салон raumplus, производственная компания D.O.M.</p>
-            <div class="footer__ribbla"><img src="img/footer/ribbla.png" alt=""></div>
-        </div>
-    </footer>
+            <div class="footer__credits">
+                <p class="footer__copyright">© 2019 Бренд-салон raumplus, производственная компания D.O.M.</p>
+                <div class="footer__ribbla"><img src="img/footer/ribbla.png" alt=""></div>
+            </div>
+        </footer>
 
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
+
+
 
 
         <!-- end of container -->
@@ -656,7 +707,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="libs/slick/slick.js"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="scripts/main.js"></script>
 </body>
 

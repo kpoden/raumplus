@@ -1,0 +1,136 @@
+.bg-dark
+    width: 100%
+    height: 100%
+    position: fixed
+    background: rgba(0, 0, 0, 0.4)
+    z-index: 1
+    position: fixed
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s
+    display: flex
+    justify-content: center
+    align-items: center
+
+.popup
+    position: relative
+    max-width: 90vw
+    background: #ffffff
+    min-width: 310px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 60px 20px 20px
+    z-index: 100
+    opacity: 0
+    visibility: hidden
+    transition: all 0.3s
+
+    &__body
+        position: relative
+    &__close
+        position: absolute
+        top: 0
+        right: 15px
+        font-size: 55px
+        cursor: pointer
+
+    &__title
+        font-size: 30px
+        color: $void
+        width: 60%
+        padding-bottom: 20px
+
+    &__button
+        width: calc(100% - 6px)
+form
+    position: relative
+.form
+    
+    &__group
+        width: 100%
+        display: flex
+        justify-content: space-between
+        &:last-child
+            margin-top: 20px
+    
+    &__field-name
+            color: $grey
+            font-size: 14px
+            padding-bottom: 20px
+
+    &__field
+        display: flex
+        flex-direction: column
+        width: 47%
+        margin-bottom: 20px
+        
+        input[type=text]
+            width: 100%
+            height: 67px
+            border: 1px solid $grey
+            font-size: 14px
+            padding: 0.5em 0.5em 0
+
+            +mw979
+                height: 50px
+
+    &__button
+        +mw600
+            font-size: 12px
+
+    &__attach
+        width: 47%
+        height: 67px
+        background: $fuschia
+        margin-top: 36px
+        display: flex
+        position: relative
+        cursor: pointer
+        +mw(903)
+            margin-top: 36px
+        +mw979
+            height: 50px
+        +mw600
+            margin-top: 36px
+        +mw(509)
+            margin-top: 56px
+
+    &__arrow
+        display: block
+        background: $void
+        width: 68px
+        height: 100%
+        position: relative
+        svg
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    
+    &__files
+        color: #ffffff
+        text-align: center
+        margin: auto
+        +mw979
+            font-size: 12px
+        +mw600
+            font-size: 14px
+        +mw480
+            font-size: 12px
+
+.agree
+    display: flex
+    &__check
+
+    &__text
+        font-size: 12px
+        padding-left: 12px
+        cursor: pointer
+        color: $grey
+        +mw600
+            font-size: 9px
+
+.show
+    visibility: visible
+    opacity: 1

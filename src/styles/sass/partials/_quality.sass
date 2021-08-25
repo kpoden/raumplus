@@ -31,12 +31,21 @@
 
     &__how
         width: 23%
+        top: 0
+        cursor: pointer
+        transition: all .3s
         border: 1px solid $light-grey
         padding: 30px
         height: 100%
         position: relative
         +mw768
             margin-bottom: 30px
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .quality__uptext
+            color: #ffffff
         
         img
             position: absolute
@@ -48,27 +57,36 @@
     &__promos
         width: 40%
         padding: 30px
-        background: $fuschia
+        top: 0
         position: relative
-        filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+        transition: all .3s
+        cursor: pointer
+        border: 1px solid $light-grey
         .quality__uptext
-            color: #ffffff
+            color: $void
         img
             position: absolute
             right: 0
             bottom: 0
             +mw480
                 height: 70%
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .quality__uptext
+            color: #ffffff
 
     &__reviews
         border: 1px solid $light-grey
         width: 23%
         padding: 30px
         position: relative
+        top: 0
+        cursor: pointer
+        transition: all .3s
         +mw768
-            margin-bottom: 30px
-
-        
+            margin-bottom: 30px  
         img
             position: absolute
             right: -25px
@@ -80,6 +98,12 @@
             +mw480
                 height: 60%
                 right: -15%
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .quality__uptext
+            color: #ffffff
 
 
     &__articles
@@ -87,8 +111,10 @@
         width: 40%
         padding: 30px
         position: relative
+        top: 0
+        transition: all .3s
+        cursor: pointer
 
-        
         img
             position: absolute
             right: 0
@@ -99,6 +125,12 @@
             +mw480
                 height: 60%
                 right: 0
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .quality__uptext
+            color: #ffffff
 
 
 

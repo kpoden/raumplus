@@ -5,6 +5,8 @@
     +mw(850)
         flex-direction: column
         align-items: center
+    +mw600
+        margin-bottom: 30px
 
     &__left
         width: 50%
@@ -19,8 +21,11 @@
         display: flex
         justify-content: space-between
         min-width: 570px
+        +mw600
+            margin-bottom: 0px
         +mw(578)
             flex-direction: column
+
 
     &__bottom
         display: flex
@@ -30,27 +35,60 @@
             
     &__quick
         width: 98%
-        background: $fuschia
-        filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
-
-        .count__text
-            color: #ffffff
+        transition: .3s
+        cursor: pointer
+        position: relative
+        top: 0
+        
         +mw600
-            width: 60%
+            width: 90%
+
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .count__text
+            color: #ffffff
+        &:hover .count__subtext
+            color: #ffffff
         
 
     &__fill
         width: 98%
         height: 220px
+        top: 0
+        transition: .3s
+        position: relative
+        cursor: pointer
         +mw600
             height: auto
-            width: 60%
+            width: 90%
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .count__text
+            color: #ffffff
+        &:hover .count__subtext
+            color: #ffffff
 
     &__easy
+        top: 0
+        position: relative
+        transition: .3s
+        cursor: pointer
         margin-top: 30px
         +mw600
-            width: 60%
+            width: 90%
             margin-top: 0
+        &:hover
+            background: $fuschia
+            filter: drop-shadow(0px 40px 40px rgba(126, 136, 173, 0.25))
+            top: -15px
+        &:hover .count__text
+            color: #ffffff
+        &:hover .count__subtext
+            color: #ffffff
 
     &__right
         display: flex
@@ -73,25 +111,32 @@
     &__uptext
         font-weight: 600
         padding-bottom: 30px
+        +mw600
+            font-size: 32px
 
 
     &__subtext
         font-size: 12px
-        
+        color: $fuschia
+        +mw600
+            font-size: 18px
 
     &__title
         font-size: 48px
         &:first-child
-            padding-bottom: 30px
+            padding-bottom: 25px
 
     &__subtitle
         display: block
         font-size: 18px
         font-weight: 600
         width: 250px
+        color:  $void
+        padding-bottom: 20px
         +mw(850)
             padding: 0 0 30px 20px
             font-size: 14px
+
 
     &__button
         margin: 20px 0 0 0

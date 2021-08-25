@@ -9,13 +9,14 @@
         position: relative
         +mw1030
             width: 70%
+            padding-bottom: 30px
 
     &__title
-        font-size: 48px
-        font-weight: 600
         padding-bottom: 100px
         +mw1030
             padding-bottom: 30px
+        +mw600
+            font-size: 40px
 
     &__button
         width: calc(100% - 6px)
@@ -31,21 +32,25 @@
         display: flex
         +mw600
             flex-direction: column
+        +mw979
+            +adaptive-font(40, 25)
         
 
 
     &__number
         position: absolute
         right: -230px
-        bottom: 0px
+        bottom: -150px
         +mw1030
             right: -50px
+            bottom: -50px
             img
                 height: 300px
         +mw600
             position: static
             img
                 height: 250px
+                padding-left: 50px
 
     
 
@@ -59,7 +64,8 @@
 
         
 
-    
+    form
+        position: relative
     .form
         &__wrap
             display: flex
@@ -67,12 +73,14 @@
             align-items: flex-end
         &__bg
             position: absolute
-            left: 0px
+            left: -50px
             top: 0px
-            width: 500%
+            width: 60vw
             height: 100%
             background: $stark
             z-index: -1
+            +mw1030
+                width: 120vw
         &__title
             font-size: 18px
             color: $void
@@ -100,7 +108,7 @@
                 width: 100%
                 height: 67px
                 border: 1px solid $grey
-                font-size: 30px
+                font-size: 14px
                 padding: 0.5em
                 +mw979
                     height: 50px
@@ -118,7 +126,7 @@
                 height: 50px
             +mw600
                 margin-top: 38px
-            +mw(445)
+            +mw(480)
                 margin-top: 56px
         &__arrow
             display: block
